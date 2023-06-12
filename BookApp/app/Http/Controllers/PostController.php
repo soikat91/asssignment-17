@@ -97,7 +97,7 @@ class PostController extends Controller
 
    public function minReadData()
    {
-       $posts = DB::table('posts')->whereBetween('min_to_read', [1, 4])->get();
+       $posts = DB::table('posts')->whereBetween('min_to_read', [1, 5])->get();
        return $posts;
    }
 
